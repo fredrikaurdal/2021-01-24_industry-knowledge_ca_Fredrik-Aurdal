@@ -1,6 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Darker+Grotesque&display=swap');
 @import url('https://use.typekit.net/ugc3qny.css');
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: 'futura-pt';
   font-style: normal;
@@ -115,7 +119,7 @@ h2 {
 
 .info-section {
   width: 100%;
-  max-width: 1564px;
+  max-width: 1264px;
   margin-top: 192px;
   white-space: pre;
   font-weight: 400;
@@ -213,4 +217,11 @@ h2 {
 .footer .text .second {
   color: #808080;
   margin-top: 8px;
+}
+
+@media screen and (max-width: 1742px) {
+  .hero .bottom {
+    grid-template-columns: auto;
+    grid-template-rows: auto auto auto;
+  }
 }
