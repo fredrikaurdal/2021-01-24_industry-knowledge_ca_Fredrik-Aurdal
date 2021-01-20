@@ -27,10 +27,23 @@ body {
   letter-spacing: 0.05em;
   width: 100%;
   max-width: 1582px;
-  margin: 32px 96px 0 96px;
+  padding: 32px 96px 0 96px;
+  width: 100%;
+  max-width: 1582px;
   display: flex;
   justify-content: space-between;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
 }
+
+/* .navbar-content {
+  padding: 32px 96px 0 96px;
+  width: 100%;
+  max-width: 1582px;
+  display: flex;
+  justify-content: space-between;
+} */
 
 .navbar .right {
   display: grid;
@@ -58,6 +71,12 @@ body {
   top: 20%;
   right: 20%;
   z-index: 2;
+  width: 192px;
+  height: 192px;
+}
+
+.fixed-item .text {
+  position: absolute;
 }
 
 .hero {
@@ -206,12 +225,14 @@ h2 {
 
 .footer {
   width: 100%;
-  max-width: 1564px;
-  padding: 64px;
   font-weight: normal;
   font-size: 32px;
   line-height: 110%;
   letter-spacing: 0.05em;
+}
+
+.footer .text {
+  padding: 64px;
 }
 
 .footer .text .second {
