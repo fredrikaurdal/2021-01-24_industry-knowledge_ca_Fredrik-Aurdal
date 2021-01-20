@@ -359,6 +359,14 @@ h2 {
     white-space: normal;
     word-break: break-all;
   }
+
+  .hero .bottom {
+    margin: 96px 32px 0 32px;
+  }
+
+  .article-section {
+    margin: 128px 32px 0 32px;
+  }
 }
 
 @media screen and (max-width: 600px) {
@@ -370,6 +378,22 @@ h2 {
     top: 82.5%;
     right: -15%;
   }
+
+  .navbar .right .links {
+    grid-template-columns: auto;
+    grid-template-rows: auto auto;
+    justify-items: center;
+  }
+
+  .navbar .right {
+    grid-template-columns: auto;
+    grid-template-rows: auto auto;
+    gap: 32px;
+  }
+
+  .hero {
+    margin-top: 96px;
+  }
 }
 
 @media screen and (max-width: 400px) {
@@ -380,16 +404,6 @@ h2 {
   .article-section .text .header {
     white-space: normal;
     word-break: break-all;
-  }
-
-  .navbar .right .links {
-    grid-template-columns: auto;
-    grid-template-rows: auto auto;
-  }
-
-  .navbar .right {
-    grid-template-columns: auto;
-    grid-template-rows: auto auto;
   }
 
   .hero {
