@@ -106,7 +106,7 @@ body {
   white-space: pre;
   font-size: 64px;
   line-height: 100%;
-  margin: 0;
+  margin: 0 32px 0 32px;
 }
 
 .hero .bottom {
@@ -127,6 +127,7 @@ h2 {
   font-size: 48px;
   line-height: 110%;
   margin: 0;
+  text-align: center;
 }
 
 .hero .bottom h2 {
@@ -177,6 +178,7 @@ h2 {
   line-height: 110%;
   letter-spacing: 0.05em;
   white-space: pre;
+  margin: 0 32px 0 32px;
 }
 
 .article-section .text .description {
@@ -188,7 +190,8 @@ h2 {
 }
 
 .services {
-  margin-top: 256px;
+  margin: 256px 32px 0 32px;
+  text-align: center;
 }
 
 .services h2 {
@@ -292,11 +295,11 @@ h2 {
   }
 }
 
-@media screen and (max-width: 1140px) {
+/* @media screen and (max-width: 1140px) {
   .hero .top h1 {
     margin-left: 32px;
   }
-}
+} */
 
 @media screen and (max-width: 900px) {
   .article-section img {
@@ -396,9 +399,16 @@ h2 {
   }
 }
 
+@media screen and (max-width: 450px) {
+  .image h2 {
+    font-size: 32px;
+  }
+
+
 @media screen and (max-width: 400px) {
   .hero .top h1 {
     font-size: 56px;
+    margin: 0 14px 0 14px;
   }
 
   .article-section .text .header {
