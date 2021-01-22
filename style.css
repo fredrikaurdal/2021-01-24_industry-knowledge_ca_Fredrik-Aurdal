@@ -165,6 +165,11 @@ h2 {
   align-items: center;
 }
 
+.article-section .text {
+  text-decoration: none;
+  color: #000000;
+}
+
 .article-section.left .text {
   margin-right: 256px;
 }
@@ -178,7 +183,7 @@ h2 {
   line-height: 110%;
   letter-spacing: 0.05em;
   white-space: pre;
-  margin: 0 32px 0 32px;
+  /* margin: 0 32px 0 32px; */
 }
 
 .article-section .text .description {
@@ -403,7 +408,7 @@ h2 {
   .image h2 {
     font-size: 32px;
   }
-
+}
 
 @media screen and (max-width: 400px) {
   .hero .top h1 {
@@ -411,10 +416,15 @@ h2 {
     margin: 0 14px 0 14px;
   }
 
-  .article-section .text .header {
+  .article-section .text {
     white-space: normal;
     word-break: break-all;
+    margin: 0 4px 0 4px;
   }
+
+  /* .article-section .text {
+    margin: 0 8px 0 8px;
+  } */
 
   .hero {
     margin-top: 48px;
