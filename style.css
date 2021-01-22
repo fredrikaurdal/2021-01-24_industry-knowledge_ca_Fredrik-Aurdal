@@ -196,7 +196,7 @@ h2 {
 
 .services {
   margin: 256px 32px 0 32px;
-  text-align: center;
+  /* text-align: center; */
 }
 
 .services h2 {
@@ -422,9 +422,9 @@ h2 {
     margin: 0 4px 0 4px;
   }
 
-  /* .article-section .text {
-    margin: 0 8px 0 8px;
-  } */
+  .services {
+    text-align: center;
+  }
 
   .hero {
     margin-top: 48px;
