@@ -443,6 +443,10 @@ h2 {
     margin: 0 14px 0 14px;
   }
 
+  .article-header {
+    padding: 0 32px 0 32px;
+  }
+
   .article-section .text {
     white-space: normal;
     word-break: break-all;
