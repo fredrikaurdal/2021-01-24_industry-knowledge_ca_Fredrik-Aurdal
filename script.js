@@ -11,17 +11,20 @@ const modal = document.querySelector('#modal');
 
 const button = document.querySelector('#modal-button');
 
-const span = document.getElementsByClassName('close')[0];
+const span = document.querySelectorAll('.close')[0];
 
-button.onclick = function () {
+// Show modal
+button.onclick = () => {
   modal.style.display = 'block';
 };
 
-span.onclick = function () {
+// Hide modal
+span.onclick = () => {
   modal.style.display = 'none';
 };
 
-window.onclick = function (event) {
+// Hide modal when clicking outside
+window.onclick = (event) => {
   if (event.target == modal) {
     modal.style.display = 'none';
   }
