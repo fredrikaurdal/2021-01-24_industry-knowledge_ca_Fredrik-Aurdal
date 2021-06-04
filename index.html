@@ -27,7 +27,7 @@
         </div>
       </div>
 
-      <div class="fixed-item">
+      <div class="fixed-item" id="modal-button">
         <img src="./img/fixed-item-text.png" alt="Decoration" class="text" />
         <img src="./img/fixed-item.png" alt="Decoration" class="background" />
       </div>
@@ -122,6 +122,34 @@ new customers.</div>
         <div class="second">contact@fredrikaurdal.com</div>
       </div>
     </div>
+
+    <!-- Trigger/Open The Modal -->
+    <!-- <button id="myBtn">Open Modal</button> -->
+
+    <!-- The Modal -->
+    <div id="modal" class="modal">
+      <!-- Modal content -->
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <form>
+          <span>
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" />
+          </span>
+          <span>
+            <label for="subject">Subject</label>
+            <input type="text" id="subject" name="subject" />
+          </span>
+          <span>
+            <label for="subject">Message</label>
+            <textarea id="message" name="message" rows="4"></textarea>
+          </span>
+
+          <input type="submit" value="Submit" />
+        </form>
+      </div>
+    </div>
+
     <script src="script.js"></script>
   </body>
 </html>
