@@ -103,6 +103,7 @@ h1 {
   align-items: center;
   margin-top: 192px;
   flex-direction: column;
+  cursor: pointer;
 }
 
 .hero .top {
@@ -169,11 +170,36 @@ h2 {
   display: grid;
   grid-template-columns: auto auto;
   align-items: center;
+  text-decoration: none;
 }
 
 .article-section .text {
   text-decoration: none;
   color: #000000;
+}
+
+.article-section .text .header {
+  display: inline-block;
+  position: relative;
+  color: #000000;
+}
+
+.article-section .text .header:after {
+  height: 4px;
+  bottom: 0;
+  left: 0;
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  transform-origin: bottom right;
+  transition: transform 0.2s ease-out;
+  background-color: #000000;
+}
+
+.article-section .text .header:hover:after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
 }
 
 .article-section.left .text {

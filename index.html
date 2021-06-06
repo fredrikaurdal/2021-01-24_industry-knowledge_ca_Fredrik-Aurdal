@@ -5,6 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Fredrik Aurdal</title>
     <link rel="stylesheet" href="./style.css" />
+    <link
+      rel="icon"
+      href="./img/favicon.png"
+      sizes="16x16 32x32"
+      type="image/png"
+    />
   </head>
   <body>
     <div class="page-wrapper">
@@ -27,7 +33,7 @@
         </div>
       </div>
 
-      <div class="fixed-item" id="modal-button">
+      <div class="fixed-item" id="modal-contact-button">
         <img src="./img/fixed-item-text.png" alt="Decoration" class="text" />
         <img src="./img/fixed-item.png" alt="Decoration" class="background" />
       </div>
@@ -40,18 +46,18 @@ modern user experiences
 based on the latest trends</h1>
         </div>
         <div class="bottom">
-          <div class="image">
+          <div class="image" id="modal-mockups-button">
             <!-- prettier-ignore -->
             <h2>mockups</h2>
             <img src="./img/hero-first.jpg" alt="First Hero Image" />
           </div>
-          <div class="image">
+          <div class="image" id="modal-frontend-button">
             <!-- prettier-ignore -->
             <h2>front-end
 development</h2>
             <img src="./img/hero-second.jpg" alt="Second Hero Image" />
           </div>
-          <div class="image">
+          <div class="image" id="modal-prototyping-button">
             <!-- prettier-ignore -->
             <h2>prototyping</h2>
             <img src="./img/hero-third.jpg" alt="Third Hero Image" />
@@ -67,31 +73,31 @@ and dealing with experts
 that know the value of
 good design.</div>
 
-      <div class="article-section left">
-        <a href="shoebox.html" class="text">
+      <a href="shoebox.html" class="article-section left">
+        <div class="text">
           <!-- prettier-ignore -->
           <div class="header">shoebox —
 ecommerce</div>
           <div class="description">buy shoes easily online</div>
-        </a>
+        </div>
         <img
           src="./img/article-section-first.jpg"
           alt="First Article Section Image"
         />
-      </div>
+      </a>
 
-      <div class="article-section right">
+      <a href="furnit.html" class="article-section right">
         <img
           src="./img/article-section-second.jpg"
           alt="Second Article Section Image"
         />
-        <a href="furnit.html" class="text">
+        <div class="text">
           <!-- prettier-ignore -->
           <div class="header">furnit —
 ecommerce</div>
           <div class="description">style your home</div>
-        </a>
-      </div>
+        </div>
+      </a>
 
       <!-- prettier-ignore -->
       <div class="info-section">Determined to bringing you
@@ -123,7 +129,7 @@ new customers.</div>
       </div>
     </div>
 
-    <div id="modal" class="modal">
+    <div id="modal-contact" class="modal">
       <div class="modal-content">
         <span class="close">&times;</span>
         <form>
@@ -142,6 +148,57 @@ new customers.</div>
 
           <input type="submit" value="Send" />
         </form>
+      </div>
+    </div>
+
+    <div id="modal-mockups" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <p>
+          Mockups lorem ipsum dolor sit amet, consectetur adipiscing elit.
+          Nullam tempor lacus sed nisl dignissim, id ultricies magna gravida.
+          Suspendisse potenti. Donec mauris orci, luctus eu erat vitae,
+          imperdiet aliquam lacus. Orci varius natoque penatibus et magnis dis
+          parturient montes, nascetur ridiculus mus. Donec scelerisque nibh
+          auctor ipsum vestibulum ullamcorper. Cras id scelerisque nulla. Cras
+          dictum magna vel libero convallis, ut ultricies leo rhoncus.
+          Vestibulum mollis massa sem, in faucibus orci pellentesque a. Nullam
+          tempus nisl sit amet auctor iaculis.
+        </p>
+      </div>
+    </div>
+
+    <div id="modal-frontend" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <p>
+          Front-end lorem ipsum dolor sit amet, consectetur adipiscing elit.
+          Nullam tempor lacus sed nisl dignissim, id ultricies magna gravida.
+          Suspendisse potenti. Donec mauris orci, luctus eu erat vitae,
+          imperdiet aliquam lacus. Orci varius natoque penatibus et magnis dis
+          parturient montes, nascetur ridiculus mus. Donec scelerisque nibh
+          auctor ipsum vestibulum ullamcorper. Cras id scelerisque nulla. Cras
+          dictum magna vel libero convallis, ut ultricies leo rhoncus.
+          Vestibulum mollis massa sem, in faucibus orci pellentesque a. Nullam
+          tempus nisl sit amet auctor iaculis.
+        </p>
+      </div>
+    </div>
+
+    <div id="modal-prototyping" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <p>
+          Prototyping lorem ipsum dolor sit amet, consectetur adipiscing elit.
+          Nullam tempor lacus sed nisl dignissim, id ultricies magna gravida.
+          Suspendisse potenti. Donec mauris orci, luctus eu erat vitae,
+          imperdiet aliquam lacus. Orci varius natoque penatibus et magnis dis
+          parturient montes, nascetur ridiculus mus. Donec scelerisque nibh
+          auctor ipsum vestibulum ullamcorper. Cras id scelerisque nulla. Cras
+          dictum magna vel libero convallis, ut ultricies leo rhoncus.
+          Vestibulum mollis massa sem, in faucibus orci pellentesque a. Nullam
+          tempus nisl sit amet auctor iaculis.
+        </p>
       </div>
     </div>
 

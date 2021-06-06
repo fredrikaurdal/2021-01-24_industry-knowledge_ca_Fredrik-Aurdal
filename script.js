@@ -7,25 +7,53 @@ function rotate() {
   image.style.transform = 'rotate(' + window.pageYOffset / 20 + 'deg)';
 }
 
-const modal = document.querySelector('#modal');
+const modal = document.querySelectorAll('.modal');
 
-const button = document.querySelector('#modal-button');
+const modalContact = document.querySelector('#modal-contact');
+const modalMockups = document.querySelector('#modal-mockups');
+const modalFrontend = document.querySelector('#modal-frontend');
+const modalPrototyping = document.querySelector('#modal-prototyping');
 
-const span = document.querySelectorAll('.close')[0];
+const contactButton = document.querySelector('#modal-contact-button');
+const mockupsButton = document.querySelector('#modal-mockups-button');
+const frontendButton = document.querySelector('#modal-frontend-button');
+const prototypingButton = document.querySelector('#modal-prototyping-button');
 
-// Show modal
-button.onclick = () => {
-  modal.style.display = 'block';
+const span = document.querySelectorAll('.close');
+
+// Show modalContact
+contactButton.onclick = () => {
+  modalContact.style.display = 'block';
 };
 
-// Hide modal
-span.onclick = () => {
-  modal.style.display = 'none';
+// Show modalMockups
+mockupsButton.onclick = () => {
+  modalMockups.style.display = 'block';
 };
 
-// Hide modal when clicking outside
+// Show modalFrontend
+frontendButton.onclick = () => {
+  modalFrontend.style.display = 'block';
+};
+
+// Show modalPrototyping
+prototypingButton.onclick = () => {
+  modalPrototyping.style.display = 'block';
+};
+
+// Hide all modal
+span.forEach((closeButton) => {
+  closeButton.onclick = () => {
+    modal.forEach((item) => {
+      item.style.display = 'none';
+      console.log(item);
+    });
+  };
+});
+
+// Hide modalContact when clicking outside
 window.onclick = (event) => {
-  if (event.target == modal) {
-    modal.style.display = 'none';
+  if (event.target == modalContact) {
+    modalContact.style.display = 'none';
   }
 };
